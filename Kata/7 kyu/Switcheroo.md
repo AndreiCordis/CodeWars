@@ -1,4 +1,4 @@
-# Switcheroo (Python solution)
+# Switcheroo (Python & JavaScript solution)
 
 ## Instructions:
 
