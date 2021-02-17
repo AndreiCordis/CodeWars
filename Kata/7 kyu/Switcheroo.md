@@ -11,7 +11,7 @@ Given a string made up of letters a, b, and/or c, switch the position of letters
 ~~~
 
 ## Solution:
-
+Python
 ~~~
 def switcheroo(string):  
     x = list(string)
@@ -23,4 +23,15 @@ def switcheroo(string):
             x[i] = "a"
 
     return "".join(x)
+~~~
+JavaScript
+~~~
+function switcheroo(x){
+    var a = x.replace(/a/g, "1");  
+    var b = a.replace(/b/g, "a");   
+    var c = b.replace(/1/g, "b");
+
+
+    return c;
+}
 ~~~
