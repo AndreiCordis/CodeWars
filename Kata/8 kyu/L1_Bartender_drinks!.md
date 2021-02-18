@@ -17,7 +17,26 @@ Note: anything else is the default case: if the input to the function is not any
 Make sure you cover the cases where certain words do not show up with correct capitalization. For example, the input "pOLitiCIaN" should still return "Your tax dollars".
 
 ## Solution:
-Python
+Python - Solution No.1
+~~~
+def get_drink_by_profession(param):
+    param = param.lower()
+
+    magic_words = {
+        "jabroni": "Patron Tequila",
+        "school counselor": "Anything with Alcohol",
+        "programmer": "Hipster Craft Beer",
+        "bike gang member": "Moonshine",
+        "politician": "Your tax dollars",
+        "rapper": "Cristal",
+    }
+
+    if(param in magic_words):
+        return magic_words[param]
+    else:
+        return "Beer"
+~~~
+Python - Solution No.2
 ~~~
 def get_drink_by_profession(param):
     param = param.lower()
